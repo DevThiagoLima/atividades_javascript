@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ted 03</title>
+</head>
+<body>
+    
+    <h1>Está no console :D</h1>
+    
+
+    <script>
+        let listaNomes = ['Thiago', 'Jamille', 'Leonardo', 'Maria', 'Ana'];
+
+        console.log(listaNomes[2]);
+
+
+        console.log(listaNomes);
+        listaNomes.push('Andre');
+        console.log(listaNomes);
+
+        listaNomes.unshift('João');
+        console.log(listaNomes);
+
+        listaNomes.pop();
+        console.log(listaNomes)
+
+        // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+        let listaNumeros = [2, 4, 6, 8]
+        listaNumerosDobrados = listaNumeros.map(valor => valor * 2);
+        console.log(listaNumerosDobrados)
+
+        // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+        let listaNumerosFiltrados = listaNumeros.filter(valor => valor > 5);
+        console.log(listaNumerosFiltrados)
+    </script>
+</body>
+</html>
