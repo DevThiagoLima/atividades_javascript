@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+</head>
+<body>
+    <script>
+        let salario = 1000;
+        let anoInicial = 1995;
+        let anoAtual = new Date().getFullYear();
+        let percentual = 0.0015;
+
+        for (let ano = 1996; ano <= anoAtual; ano++) {
+        salario += salario * percentual;
+        percentual *= 2;
+        }
+
+        alert(`Salário atual em ${anoAtual}: R$ ${salario.toFixed(2)}`);
+    </script>
+
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-  -->
+
+    <script>
+        let salario2 = parseFloat(prompt("Digite o salário inicial do funcionário:"));
+        let anoInicial2 = 1995;
+        let anoAtual2 = new Date().getFullYear();
+
+        if (isNaN(salario2) || salario2 <= 0) {
+        alert("Salário inválido. Digite um valor numérico maior que zero.");
+        } else {
+        let percentual = 0.0015;
+
+        for (let ano = 1996; ano <= anoAtual2; ano++) {
+            salario2 += salario2 * percentual;
+            percentual *= 2;
+        }
+
+        alert(`Salário atual em ${anoAtual2}: R$ ${salario2.toFixed(2)}`);
+        }
+    </script>
+</body>
+</html>

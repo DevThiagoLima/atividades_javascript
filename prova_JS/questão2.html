@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+<body>
+    <script>
+        let pares = 0;
+        let impares = 0;
+
+        for (let i = 0; i < 10; i++) {
+        let numero = parseInt(prompt(`Digite o ${i + 1}º número inteiro:`), 10);
+
+        if (isNaN(numero)) {
+            alert("Por favor, digite um número inteiro válido.");
+            i--; // repete a iteração atual
+        } else {
+            if (numero % 2 === 0) {
+            pares++;
+            } else {
+            impares++;
+            }
+        }
+        }
+
+        alert(`Quantidade de números pares: ${pares}\nQuantidade de números ímpares: ${impares}`);
+
+    </script>
+</body>
+</html>
